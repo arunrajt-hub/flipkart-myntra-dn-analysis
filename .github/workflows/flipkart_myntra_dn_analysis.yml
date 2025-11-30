@@ -3,8 +3,8 @@ name: Flipkart Myntra DN Analysis
 # This workflow runs the Flipkart & Myntra Q2 DN Analysis script
 on:
   schedule:
-    # Run every 12 hours (at minute 0 of every 12th hour)
-    - cron: '0 */12 * * *'
+    # Twice daily (9 AM and 6 PM):
+    - cron: '0 9,18 * * *'
   
   # Allow manual triggering from GitHub Actions UI
   workflow_dispatch:
